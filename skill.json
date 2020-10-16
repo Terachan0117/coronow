@@ -1,0 +1,50 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "ja-JP": {
+          "summary": "新型コロナウイルス感染症の日本国内における最新情報をお伝えするスキルです。",
+          "examplePhrases": [
+            "アレクサ、コロナウを開いて",
+            "アレクサ、コロナウを開いて入院者数",
+            "アレクサ、コロナウを開いて東京都の陽性者数"
+          ],
+          "keywords": [],
+          "name": "コロナウ",
+          "description": "このスキルでは、新型コロナウイルス感染症の日本国内における最新情報をお伝えします。知りたい情報を「陽性者数」や「入院者数」、「死亡者数」のように言ってみてください。都道府県別の陽性者数をお伝えすることもできます。「東京都の陽性者数」のように言ってみてください。\n\n情報は、内閣官房の新型コロナウイルス感染症対策推進室が公開しているウェブサイトを元にしています。\nこのスキルは医学的または専門的な根拠に基づく助言を行うものではなく、あくまで情報や知識の提供のみを目的とするものです。医学的または専門的な助言、診療、または診断に代わるものではありません。",
+          "smallIconUri": "file://assets/images/ja-JP_smallIconUri.png",
+          "largeIconUri": "file://assets/images/ja-JP_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "「アレクサ、コロナウを開いて」→コロナウを起動し簡単な使い方をご紹介します。\n「アレクサ、コロナウを開いて陽性者数」→最新の日本国内における陽性者数をお伝えします。\n「アレクサ、コロナウを開いて東京都の陽性者数」→最新の東京都における陽性者数をお伝えします。\n「アレクサ、コロナウを開いて入院者数」→最新の日本国内における入院者数をお伝えします。\n「アレクサ、コロナウを開いて死亡者数」→最新の日本国内における死亡者数をお伝えします。\n\n情報は、内閣官房の新型コロナウイルス感染症対策推進室が公開しているウェブサイト（URL：https://corona.go.jp/dashboard/）を元にしています。このスキルは医学的または専門的な根拠に基づく助言を行うものではなく、あくまで情報や知識の提供のみを目的とするものです。医学的または専門的な助言、診療、または診断に代わるものではありません。",
+      "category": "HEALTH_AND_FITNESS",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "ask-coronow-default"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "ja-JP": {
+          "termsOfUseUrl": "https://tera-chan.com/serviceterms.html",
+          "privacyPolicyUrl": "https://tera-chan.com/privacypolicy.html"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
